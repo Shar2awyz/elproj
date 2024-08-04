@@ -29,8 +29,8 @@ namespace elproj
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
-            form.Show();
+            Form1 fors = new Form1();
+            fors.Show();
             this.Hide();
 
         }

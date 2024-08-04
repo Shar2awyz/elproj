@@ -25,6 +25,7 @@
             {
                 Form2 form = new Form2();
                 form.Show();
+                this.Hide();
             }
             else if (textBox1.Text == specificword2)
             {
