@@ -19,7 +19,7 @@ namespace elproj
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -29,10 +29,15 @@ namespace elproj
 
         private void button2_Click(object sender, EventArgs e)
         {
+           
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
             Form1 fors = new Form1();
             fors.Show();
             this.Hide();
-
         }
     }
 }
