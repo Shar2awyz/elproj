@@ -1,4 +1,4 @@
-namespace elproj
+﻿namespace elproj
 {
     public partial class Form1 : Form
     {
@@ -19,6 +19,7 @@ namespace elproj
 
         private void button1_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("احا");
             Form2 form = new Form2();   
             form.Show();
             this.Hide();
