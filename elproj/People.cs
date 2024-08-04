@@ -8,10 +8,10 @@ namespace elproj
 {
     internal  class People
     {
-      protected string Name;
-        protected  string Department;
-        protected string ID;
-        protected string salarywithbonus;
+     internal string Name;
+        internal  string Department;
+        internal string ID;
+        protected string salarywithbonus="0";
         internal void setName(string N) {
         Name= N;
         }

@@ -44,30 +44,29 @@ namespace elproj
 
         private void button1_Click(object sender, EventArgs e)
         {
-            StreamWriter st = new StreamWriter("Documents\\Employee.txt");
-            
-            employee employees = new employee();
-            employees.setName(textBox1.Text);
-         
-            st.WriteLine(employees.getName());
-
-
-          
-
-
-          
-
-
-
-
-
-
-
-
-            MessageBox.Show("Submitted Successfully");
+            try
+            {
+                using (StreamWriter st = new StreamWriter("E:\\Employeez.txt"))
+                {
+                    employee employees = new employee();
+                    employees.Name=textBox1.Text;
+                    employees.ID = textBox2.Text;
+                    employees.Department=textBox3.Text;
+                    employees.setBonus(textBox4.Text);
+                    st.WriteLine(employees.Name);
+                    st.WriteLine(employees.ID);
+                    st.WriteLine(employees.Department);
+                    st.WriteLine(employees.getBonus());
+        
+                }
+                MessageBox.Show("Submitted Successfully");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}");
+            }
         }
-
-        private void button2_Click(object sender, EventArgs e)
+            private void button2_Click(object sender, EventArgs e)
         {
             Form1 form = new Form1();   
             form.Show();

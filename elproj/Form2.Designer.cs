@@ -31,13 +31,15 @@
             comboBox1 = new ComboBox();
             button1 = new Button();
             button2 = new Button();
+            checkBox1 = new CheckBox();
+            CheckBox2 = new CheckBox();
             SuspendLayout();
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "add employee", "search", "display", "Delete All" });
-            comboBox1.Location = new Point(275, 179);
+            comboBox1.Location = new Point(315, 365);
             comboBox1.Margin = new Padding(6);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(245, 40);
@@ -46,7 +48,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(310, 279);
+            button1.Location = new Point(349, 435);
             button1.Margin = new Padding(6);
             button1.Name = "button1";
             button1.Size = new Size(154, 47);
@@ -57,14 +59,36 @@
             // 
             // button2
             // 
-            button2.Location = new Point(607, 358);
+            button2.Location = new Point(752, 552);
             button2.Margin = new Padding(6);
             button2.Name = "button2";
             button2.Size = new Size(154, 47);
             button2.TabIndex = 2;
             button2.Text = "Main Menu";
             button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click_1;
+            button2.Click += button2_Click;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(349, 510);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(164, 36);
+            checkBox1.TabIndex = 3;
+            checkBox1.Text = "AssistantDr";
+            checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
+            // 
+            // CheckBox2
+            // 
+            CheckBox2.AutoSize = true;
+            CheckBox2.Location = new Point(349, 552);
+            CheckBox2.Name = "CheckBox2";
+            CheckBox2.Size = new Size(176, 36);
+            CheckBox2.TabIndex = 4;
+            CheckBox2.Text = "Receptionist";
+            CheckBox2.UseVisualStyleBackColor = true;
+            CheckBox2.CheckedChanged += Receptionist_CheckedChanged;
             // 
             // Form2
             // 
@@ -72,7 +96,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.healthcare_and_medicine_concept_smart_medical_doctor_working_with_stethoscope_at_modern_hospital_free_photo;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(941, 646);
+            Controls.Add(CheckBox2);
+            Controls.Add(checkBox1);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(comboBox1);
@@ -81,6 +107,7 @@
             Text = "Form2";
             Load += Form2_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -88,5 +115,7 @@
         private ComboBox comboBox1;
         private Button button1;
         private Button button2;
+        private CheckBox checkBox1;
+        private CheckBox CheckBox2;
     }
 }
