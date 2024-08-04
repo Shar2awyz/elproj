@@ -41,18 +41,5 @@ namespace elproj
             fors.Show();
             this.Hide();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (comboBox1.SelectedItem.ToString() == "add employee")
-            {Form4 fors = new Form4();
-                fors.Show();    
-                this.Hide();    
-            
-            
-            };
-
-
-        }
     }
 }

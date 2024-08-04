@@ -1,6 +1,6 @@
 ﻿namespace elproj
 {
-    partial class Form2
+    partial class Form3
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             comboBox1 = new ComboBox();
             button1 = new Button();
             button2 = new Button();
@@ -36,9 +37,9 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "add employee", "search", "display", "Delete All" });
-            comboBox1.Location = new Point(275, 179);
-            comboBox1.Margin = new Padding(6);
+            comboBox1.Items.AddRange(new object[] { "Add patient ", "Search patient ", "display ", "Delete All" });
+            comboBox1.Location = new Point(500, 307);
+            comboBox1.Margin = new Padding(6, 6, 6, 6);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(245, 40);
             comboBox1.TabIndex = 0;
@@ -46,40 +47,39 @@
             // 
             // button1
             // 
-            button1.Location = new Point(310, 279);
-            button1.Margin = new Padding(6);
+            button1.Location = new Point(518, 418);
+            button1.Margin = new Padding(6, 6, 6, 6);
             button1.Name = "button1";
             button1.Size = new Size(154, 47);
             button1.TabIndex = 1;
             button1.Text = "submit";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(607, 358);
-            button2.Margin = new Padding(6);
+            button2.Location = new Point(878, 570);
+            button2.Margin = new Padding(6, 6, 6, 6);
             button2.Name = "button2";
             button2.Size = new Size(154, 47);
             button2.TabIndex = 2;
             button2.Text = "Main Menu";
             button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click_1;
+            button2.Click += button2_Click;
             // 
-            // Form2
+            // Form3
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.healthcare_and_medicine_concept_smart_medical_doctor_working_with_stethoscope_at_modern_hospital_free_photo;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1101, 680);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(comboBox1);
-            Margin = new Padding(4);
-            Name = "Form2";
-            Text = "Form2";
-            Load += Form2_Load;
+            DoubleBuffered = true;
+            Margin = new Padding(6, 6, 6, 6);
+            Name = "Form3";
+            Text = "Form3";
             ResumeLayout(false);
         }
 
