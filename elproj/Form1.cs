@@ -31,8 +31,6 @@
             {
                 Form3 form1 = new Form3();
                 form1.Show();
-                this.Hide();
-
             }
             else
             {
