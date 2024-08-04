@@ -19,10 +19,29 @@
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("احا");
-            Form2 form = new Form2();   
-            form.Show();
-            this.Hide();
+            string specificword = "manager";
+            string specificword2 = "employee";
+            if (textBox1.Text == specificword)
+            {
+                Form2 form = new Form2();
+                form.Show();
+            }
+            else if (textBox1.Text == specificword2)
+            {
+                Form3 form1 = new Form3();
+                form1.Show();
+            }
+            else
+            {
+                MessageBox.Show("incorrect password ,try again");
+            }
+
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
