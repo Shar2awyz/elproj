@@ -21,12 +21,5 @@ namespace elproj
         {
 
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Form1 form = new Form1();
-            form.Show();
-            this.Hide();
-        }
     }
 }
