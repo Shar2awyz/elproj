@@ -63,9 +63,30 @@ namespace elproj.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1467464 {
+            get {
+                object obj = ResourceManager.GetObject("1467464", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap click {
             get {
                 object obj = ResourceManager.GetObject("click", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap healthcare_and_medicine_concept_smart_medical_doctor_working_with_stethoscope_at_modern_hospital_free_photo {
+            get {
+                object obj = ResourceManager.GetObject("healthcare-and-medicine-concept-smart-medical-doctor-working-with-stethoscope-at-" +
+                        "modern-hospital-free-photo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
