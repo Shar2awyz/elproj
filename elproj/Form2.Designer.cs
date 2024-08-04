@@ -36,7 +36,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "add employee", "search", "display" });
+            comboBox1.Items.AddRange(new object[] { "add employee", "search", "display", "Delete All" });
             comboBox1.Location = new Point(148, 95);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(134, 25);
