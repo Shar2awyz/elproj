@@ -88,7 +88,7 @@
             CheckBox2.TabIndex = 4;
             CheckBox2.Text = "Receptionist";
             CheckBox2.UseVisualStyleBackColor = true;
-            CheckBox2.CheckedChanged += Receptionist_CheckedChanged;
+            CheckBox2.CheckedChanged += CheckBox2_CheckedChanged;
             // 
             // Form2
             // 

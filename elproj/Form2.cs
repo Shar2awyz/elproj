@@ -8,6 +8,9 @@ namespace elproj
         public Form2()
         {
             InitializeComponent();
+            // Ensure event handlers are connected
+            checkBox1.CheckedChanged += new EventHandler(checkBox1_CheckedChanged);
+            CheckBox2.CheckedChanged += new EventHandler(CheckBox2_CheckedChanged);
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -24,7 +27,6 @@ namespace elproj
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Handle combo box selection change here
             if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "add employee")
             {
                 checkBox1.Show();
@@ -46,22 +48,44 @@ namespace elproj
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "add employee")
+            if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "add employee" && checkBox1.Checked == true)
             {
                 Form4 fors = new Form4();
                 fors.Show();
                 this.Hide();
             }
+            else
+                MessageBox.Show("اصبر لسه");
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-         
+            if (checkBox1.Checked)
+            {
+                // Uncheck and disable CheckBox2 if CheckBox1 is checked
+                CheckBox2.Checked = false;
+                CheckBox2.Enabled = false;
+            }
+            else
+            {
+                // Enable CheckBox2 if CheckBox1 is unchecked
+                CheckBox2.Enabled = true;
+            }
         }
 
-        private void Receptionist_CheckedChanged(object sender, EventArgs e)
+        private void CheckBox2_CheckedChanged(object sender, EventArgs e)
         {
-         
+            if (CheckBox2.Checked)
+            {
+                // Uncheck and disable checkBox1 if CheckBox2 is checked
+                checkBox1.Checked = false;
+                checkBox1.Enabled = false;
+            }
+            else
+            {
+                // Enable checkBox1 if CheckBox2 is unchecked
+                checkBox1.Enabled = true;
+            }
         }
     }
 }
