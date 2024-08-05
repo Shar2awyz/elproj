@@ -46,7 +46,7 @@ namespace elproj
         {
             try
             {
-                using (StreamWriter st = new StreamWriter("E:\\Employeez.txt"))
+                using (StreamWriter st = new StreamWriter("D:\\Employeez.txt"))
                 {
                     employee employees = new employee();
                     employees.Name=textBox1.Text;
@@ -60,6 +60,11 @@ namespace elproj
         
                 }
                 MessageBox.Show("Submitted Successfully");
+
+                textBox1.Text = "";
+                textBox2.Text = "";
+                textBox3.Text = "";
+                textBox4.Text = "";
             }
             catch (Exception ex)
             {
