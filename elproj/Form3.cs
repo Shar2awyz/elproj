@@ -31,7 +31,12 @@ namespace elproj
 
         private void button1_Click(object sender, EventArgs e)
         {
-          
+          if(  comboBox1.SelectedItem.ToString() == "Add patient ")
+            {
+                Form5 form = new Form5();
+                form.Show();
+                this.Hide();
+            }
         }
     }
 }

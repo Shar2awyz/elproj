@@ -38,19 +38,17 @@
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Add patient ", "Search patient ", "display ", "Delete All" });
-            comboBox1.Location = new Point(500, 307);
-            comboBox1.Margin = new Padding(6);
+            comboBox1.Location = new Point(257, 144);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(245, 40);
+            comboBox1.Size = new Size(134, 23);
             comboBox1.TabIndex = 0;
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // button1
             // 
-            button1.Location = new Point(518, 418);
-            button1.Margin = new Padding(6);
+            button1.Location = new Point(279, 196);
             button1.Name = "button1";
-            button1.Size = new Size(154, 47);
+            button1.Size = new Size(83, 22);
             button1.TabIndex = 1;
             button1.Text = "submit";
             button1.UseVisualStyleBackColor = true;
@@ -58,10 +56,9 @@
             // 
             // button2
             // 
-            button2.Location = new Point(878, 570);
-            button2.Margin = new Padding(6);
+            button2.Location = new Point(473, 267);
             button2.Name = "button2";
-            button2.Size = new Size(154, 47);
+            button2.Size = new Size(83, 22);
             button2.TabIndex = 2;
             button2.Text = "Main Menu";
             button2.UseVisualStyleBackColor = true;
@@ -69,16 +66,15 @@
             // 
             // Form3
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1101, 680);
+            ClientSize = new Size(593, 319);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(comboBox1);
             DoubleBuffered = true;
-            Margin = new Padding(6);
             Name = "Form3";
             Text = "Form3";
             ResumeLayout(false);

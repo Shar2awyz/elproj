@@ -46,7 +46,7 @@
             textBox1.Location = new Point(33, 42);
             textBox1.Margin = new Padding(4, 3, 4, 3);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(245, 37);
+            textBox1.Size = new Size(245, 21);
             textBox1.TabIndex = 0;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
@@ -55,7 +55,7 @@
             textBox2.Location = new Point(33, 135);
             textBox2.Margin = new Padding(4, 3, 4, 3);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(245, 37);
+            textBox2.Size = new Size(245, 21);
             textBox2.TabIndex = 1;
             textBox2.TextChanged += textBox2_TextChanged;
             // 
@@ -64,7 +64,7 @@
             textBox3.Location = new Point(33, 219);
             textBox3.Margin = new Padding(4, 3, 4, 3);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(245, 37);
+            textBox3.Size = new Size(245, 21);
             textBox3.TabIndex = 2;
             textBox3.TextChanged += textBox3_TextChanged;
             // 
@@ -73,7 +73,7 @@
             textBox4.Location = new Point(33, 301);
             textBox4.Margin = new Padding(4, 3, 4, 3);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(245, 37);
+            textBox4.Size = new Size(245, 21);
             textBox4.TabIndex = 3;
             textBox4.TextChanged += textBox4_TextChanged;
             // 
@@ -102,46 +102,46 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(110, 0);
+            label1.Location = new Point(33, 9);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(77, 30);
+            label1.Size = new Size(41, 15);
             label1.TabIndex = 6;
             label1.Text = "Name";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(134, 90);
+            label2.Location = new Point(33, 104);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(38, 30);
+            label2.Size = new Size(19, 15);
             label2.TabIndex = 7;
             label2.Text = "ID";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(80, 174);
+            label3.Location = new Point(33, 181);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(171, 30);
+            label3.Size = new Size(72, 15);
             label3.TabIndex = 8;
             label3.Text = "Department";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(110, 259);
+            label4.Location = new Point(33, 269);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(90, 30);
+            label4.Size = new Size(42, 15);
             label4.TabIndex = 9;
             label4.Text = "Bonus";
             // 
             // Form4
             // 
-            AutoScaleDimensions = new SizeF(16F, 30F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
@@ -158,7 +158,7 @@
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
-            Font = new Font("Showcard Gothic", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4, 3, 4, 3);
             Name = "Form4";
