@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq.Expressions;
 using System.Windows.Forms;
 
 namespace elproj
@@ -8,7 +9,7 @@ namespace elproj
         public Form2()
         {
             InitializeComponent();
-            // Ensure event handlers are connected
+          
             checkBox1.CheckedChanged += new EventHandler(checkBox1_CheckedChanged);
             CheckBox2.CheckedChanged += new EventHandler(CheckBox2_CheckedChanged);
         }
@@ -17,9 +18,16 @@ namespace elproj
         {
             checkBox1.Hide();
             CheckBox2.Hide();
+       
 
-            if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "add employee")
+                if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "add employee")
             {
+                checkBox1.Show();
+                CheckBox2.Show();
+            }
+            if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "Delete All")
+            {
+
                 checkBox1.Show();
                 CheckBox2.Show();
             }
@@ -33,10 +41,36 @@ namespace elproj
                 CheckBox2.Show();
             }
             else
+     if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "display") {
+                checkBox1.Show();
+                CheckBox2.Show();
+
+
+
+
+            }
+
+
+
+
+            else
+
+
+                if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "Delete All")
+            {
+
+                checkBox1.Show();
+                CheckBox2.Show();
+            }
+
+            else
             {
                 checkBox1.Hide();
                 CheckBox2.Hide();
+
             }
+           
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -55,6 +89,79 @@ namespace elproj
                 this.Hide();
             }
             else
+            if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "Delete All")
+            {
+                
+
+                if (checkBox1.Checked == true&&CheckBox2.Checked==false)
+                {
+                    try
+                    {
+                        using (StreamWriter st = new StreamWriter("D:\\AssisDr.txt", false))
+                        {
+                            MessageBox.Show("Assistant Drs Data Deleted");
+
+
+
+
+
+
+                        }
+
+
+
+                    }
+                    catch (Exception cs)
+                    {
+                        MessageBox.Show("An Error Occured");
+
+
+
+                    }
+                }
+                else if (CheckBox2.Checked == true && checkBox1.Checked == false)
+                {
+                    MessageBox.Show("Receptionist Data Deleted");
+                    try
+                    {
+                        using (StreamWriter st = new StreamWriter("D:\\Recep.txt", false))
+                        {
+
+
+
+
+
+
+
+                        }
+
+
+
+                    }
+                    catch (Exception cs)
+                    {
+                        MessageBox.Show("An Error Occured");
+
+
+
+                    }
+                }
+            }
+            else
+            if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "display"&&checkBox1.Checked==true&CheckBox2.Checked==false)
+            {
+                Form6 fors = new Form6();
+                fors.Show();
+                this.Hide();
+
+
+
+
+
+
+
+            }
+            else
                 MessageBox.Show("اصبر لسه");
         }
 
@@ -62,13 +169,13 @@ namespace elproj
         {
             if (checkBox1.Checked)
             {
-                // Uncheck and disable CheckBox2 if CheckBox1 is checked
+             
                 CheckBox2.Checked = false;
                 CheckBox2.Enabled = false;
             }
             else
             {
-                // Enable CheckBox2 if CheckBox1 is unchecked
+               
                 CheckBox2.Enabled = true;
             }
         }
@@ -77,13 +184,13 @@ namespace elproj
         {
             if (CheckBox2.Checked)
             {
-                // Uncheck and disable checkBox1 if CheckBox2 is checked
+              
                 checkBox1.Checked = false;
                 checkBox1.Enabled = false;
             }
             else
             {
-                // Enable checkBox1 if CheckBox2 is unchecked
+                
                 checkBox1.Enabled = true;
             }
         }

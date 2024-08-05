@@ -46,7 +46,7 @@ namespace elproj
         {
             try
             {
-                using (StreamWriter st = new StreamWriter("D:\\Employeez.txt",true))
+                using (StreamWriter st = new StreamWriter("D:\\AssisDr.txt", true))
                 {
                     employee employees = new employee();
                     employees.Name=textBox1.Text;
