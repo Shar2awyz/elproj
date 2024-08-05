@@ -46,7 +46,7 @@ namespace elproj
         {
             try
             {
-                using (StreamWriter st = new StreamWriter("D:\\Employeez.txt"))
+                using (StreamWriter st = new StreamWriter("D:\\Employeez.txt",true))
                 {
                     employee employees = new employee();
                     employees.Name=textBox1.Text;
@@ -73,7 +73,7 @@ namespace elproj
         }
             private void button2_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();   
+            Form2 form = new Form2();   
             form.Show();
             this.Hide();
         }

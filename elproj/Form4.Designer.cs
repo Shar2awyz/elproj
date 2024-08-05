@@ -79,7 +79,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(58, 379);
+            button1.Location = new Point(511, 379);
             button1.Margin = new Padding(4, 3, 4, 3);
             button1.Name = "button1";
             button1.Size = new Size(185, 43);
@@ -95,7 +95,7 @@
             button2.Name = "button2";
             button2.Size = new Size(185, 43);
             button2.TabIndex = 5;
-            button2.Text = "Menu";
+            button2.Text = "Back";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
