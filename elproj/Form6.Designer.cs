@@ -42,6 +42,7 @@
             textBox19 = new TextBox();
             textBox20 = new TextBox();
             button2 = new Button();
+            button3 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -260,12 +261,23 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // button3
+            // 
+            button3.Location = new Point(22, 624);
+            button3.Name = "button3";
+            button3.Size = new Size(150, 46);
+            button3.TabIndex = 30;
+            button3.Text = "Exit";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click_1;
+            // 
             // Form6
             // 
             AutoScaleMode = AutoScaleMode.Inherit;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1115, 696);
+            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(textBox20);
             Controls.Add(textBox19);
@@ -326,5 +338,6 @@
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.Button button2;
+        private Button button3;
     }
 }

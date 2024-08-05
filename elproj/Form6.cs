@@ -14,7 +14,7 @@ namespace elproj
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-          
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -153,7 +153,7 @@ namespace elproj
 
         private void Form6_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -167,5 +167,9 @@ namespace elproj
         {
         }
 
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
