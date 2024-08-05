@@ -32,7 +32,7 @@ namespace elproj
         {
             try
             {
-                using (StreamWriter st = new StreamWriter("D:\\Patients.txt",true))
+                using (StreamWriter st = new StreamWriter("D:\\Patients.txt", true))
                 {
                     Patient Patients = new Patient();
                     Patients.Name = textBox1.Text;
@@ -53,6 +53,13 @@ namespace elproj
             {
                 MessageBox.Show($"An error occurred: {ex.Message}");
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.Show();
+            this.Hide();
         }
     }
 }
