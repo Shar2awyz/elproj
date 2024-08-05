@@ -15,6 +15,7 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6));
             button1 = new Button();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
@@ -261,8 +262,8 @@
             // 
             // Form6
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.Inherit;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1115, 696);
             Controls.Add(button2);
@@ -291,6 +292,7 @@
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(button1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form6";
             Text = "AssistantDrs Details";
             Load += Form6_Load;
