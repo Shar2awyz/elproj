@@ -78,10 +78,13 @@ namespace elproj
             textBox12.ReadOnly = true;
         }
 
-        
 
-    
-        private void button1_Click(object sender, EventArgs e)
+
+
+
+
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -99,7 +102,7 @@ namespace elproj
                     textBox10.Text = sr.ReadLine();
                     textBox11.Text = sr.ReadLine();
                     textBox12.Text = sr.ReadLine();
-                   
+
                 }
             }
             catch (Exception ex)
@@ -108,5 +111,26 @@ namespace elproj
             }
         }
 
+        private void textBox11_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox9_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox10_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 form = new Form3();
+            form.Show();
+            this.Hide();
+        }
     }
 }

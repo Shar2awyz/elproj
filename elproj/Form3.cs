@@ -43,6 +43,25 @@ namespace elproj
                 form.Show();
                 this.Hide();
             }
+          else if (comboBox1.SelectedItem.ToString()== "Delete All")
+            {
+
+                try
+                {
+                    using (StreamWriter st = new StreamWriter("D:\\Patients.txt", false))
+                    {
+                        MessageBox.Show("Patients Data Deleted");
+
+                    }
+
+                }
+                catch (Exception cs)
+                {
+                    MessageBox.Show("An Error Occured");
+
+                }
+
+            }
         }
     }
 }

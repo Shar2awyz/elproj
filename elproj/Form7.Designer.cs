@@ -44,6 +44,7 @@
             label2 = new Label();
             label3 = new Label();
             button1 = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // textBox1
@@ -56,77 +57,80 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(68, 194);
+            textBox2.Location = new Point(263, 73);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(145, 23);
             textBox2.TabIndex = 1;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(452, 131);
+            textBox3.Location = new Point(452, 73);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(145, 23);
             textBox3.TabIndex = 2;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(452, 73);
+            textBox4.Location = new Point(68, 131);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(145, 23);
             textBox4.TabIndex = 3;
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(263, 73);
+            textBox5.Location = new Point(263, 131);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(145, 23);
             textBox5.TabIndex = 4;
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(263, 131);
+            textBox6.Location = new Point(452, 131);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(145, 23);
             textBox6.TabIndex = 1;
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(68, 131);
+            textBox7.Location = new Point(68, 184);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(145, 23);
             textBox7.TabIndex = 5;
             // 
             // textBox8
             // 
-            textBox8.Location = new Point(263, 243);
+            textBox8.Location = new Point(263, 184);
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(145, 23);
             textBox8.TabIndex = 6;
             // 
             // textBox9
             // 
-            textBox9.Location = new Point(452, 243);
+            textBox9.Location = new Point(452, 184);
             textBox9.Name = "textBox9";
             textBox9.Size = new Size(145, 23);
             textBox9.TabIndex = 7;
+            textBox9.TextChanged += textBox9_TextChanged_1;
             // 
             // textBox10
             // 
-            textBox10.Location = new Point(452, 184);
+            textBox10.Location = new Point(68, 243);
             textBox10.Name = "textBox10";
             textBox10.Size = new Size(145, 23);
             textBox10.TabIndex = 8;
+            textBox10.TextChanged += textBox10_TextChanged_1;
             // 
             // textBox11
             // 
-            textBox11.Location = new Point(263, 184);
+            textBox11.Location = new Point(263, 243);
             textBox11.Name = "textBox11";
             textBox11.Size = new Size(145, 23);
             textBox11.TabIndex = 9;
+            textBox11.TextChanged += textBox11_TextChanged_1;
             // 
             // textBox12
             // 
-            textBox12.Location = new Point(68, 243);
+            textBox12.Location = new Point(452, 243);
             textBox12.Name = "textBox12";
             textBox12.Size = new Size(145, 23);
             textBox12.TabIndex = 10;
@@ -160,12 +164,23 @@
             // 
             // button1
             // 
-            button1.Location = new Point(557, 386);
+            button1.Location = new Point(536, 376);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(110, 27);
             button1.TabIndex = 14;
-            button1.Text = "button1";
+            button1.Text = "Display Info!";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_1;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(665, 376);
+            button2.Name = "button2";
+            button2.Size = new Size(110, 27);
+            button2.TabIndex = 15;
+            button2.Text = "Back";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // Form7
             // 
@@ -174,6 +189,7 @@
             BackgroundImage = Properties.Resources.healthcare_and_medicine_concept_smart_medical_doctor_working_with_stethoscope_at_modern_hospital_free_photo;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -214,5 +230,6 @@
         private Label label2;
         private Label label3;
         private Button button1;
+        private Button button2;
     }
 }
