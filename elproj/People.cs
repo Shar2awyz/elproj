@@ -78,7 +78,7 @@ internal class Receptionist : employee
     internal override void setBonus(string b)
     {
 
-        Salary = "11000";
+        Salary = "7000";
         int z = int.Parse(b) + int.Parse(Salary);
 
         salarywithbonus = Convert.ToString(z);
