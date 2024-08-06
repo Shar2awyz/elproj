@@ -166,7 +166,6 @@
             button1.TabIndex = 14;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += this.button1_Click_1;
             // 
             // Form7
             // 
