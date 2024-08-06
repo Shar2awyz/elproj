@@ -1,4 +1,5 @@
-﻿using System;
+﻿using elproj;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace elproj
 {
-    internal  class People
+    internal abstract  class People
     {
      internal string Name;
         internal  string Department;
@@ -30,11 +31,11 @@ namespace elproj
     };
 
 
-    internal class employee : People {
-        private string Salary="10000";
+    internal abstract class employee : People {
+        protected string Salary="10000";
         private string Bonus;
 
-        internal void setBonus(string B) {
+        internal virtual void setBonus(string B) {
         int z=int.Parse(B)+int.Parse(Salary);
 
             salarywithbonus=Convert.ToString(z);
@@ -42,7 +43,7 @@ namespace elproj
 
         
         }
-        internal string getBonus() {
+        internal virtual string getBonus() {
         return salarywithbonus;
         } 
     
@@ -51,17 +52,58 @@ namespace elproj
     
     };
 
-    internal class Patient : People {
 
-        internal string Condition;
+
     
-    
-    
-    
-    
-    
-    
-    
-    
-    };
-}
+internal class AssisDr : employee
+{
+    internal override void setBonus(string b)
+    {
+
+        Salary = "11000";
+        int z = int.Parse(b) + int.Parse(Salary);
+
+        salarywithbonus = Convert.ToString(z);
+
+
+    }
+        internal override string getBonus()
+        {
+            return salarywithbonus;
+
+        }    }
+};
+internal class Receptionist : employee
+{
+    internal override void setBonus(string b)
+    {
+
+        Salary = "11000";
+        int z = int.Parse(b) + int.Parse(Salary);
+
+        salarywithbonus = Convert.ToString(z);
+
+
+    }
+    internal override string getBonus()
+    {
+        return salarywithbonus;
+
+    }
+
+};
+internal class Patient : People
+{
+
+    internal string Condition;
+
+
+
+
+
+
+
+
+};
+
+
