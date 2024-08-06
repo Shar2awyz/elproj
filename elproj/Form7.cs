@@ -11,9 +11,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace elproj
 {
-    public partial class Display_patient : Form
+    public partial class Form7 : Form
     {
-        public Display_patient()
+        public Form7()
         {
             InitializeComponent();
         }
@@ -85,7 +85,7 @@ namespace elproj
         {
             try
             {
-                using (StreamReader sr = new StreamReader("D:\\AssisDr.txt"))
+                using (StreamReader sr = new StreamReader("D:\\Patients.txt"))
                 {
                     textBox1.Text = sr.ReadLine();
                     textBox2.Text = sr.ReadLine();

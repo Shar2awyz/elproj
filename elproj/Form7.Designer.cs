@@ -1,6 +1,6 @@
 ﻿namespace elproj
 {
-    partial class Display_patient
+    partial class Form7
     {
         /// <summary>
         /// Required designer variable.
@@ -157,7 +157,6 @@
             label3.Size = new Size(60, 15);
             label3.TabIndex = 13;
             label3.Text = "Condition";
-            
             // 
             // button1
             // 
@@ -167,8 +166,9 @@
             button1.TabIndex = 14;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += this.button1_Click_1;
             // 
-            // Display_patient
+            // Form7
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -191,7 +191,7 @@
             Controls.Add(textBox6);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
-            Name = "Display_patient";
+            Name = "Form7";
             Text = "Display_patient";
             ResumeLayout(false);
             PerformLayout();

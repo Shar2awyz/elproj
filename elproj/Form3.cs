@@ -37,6 +37,12 @@ namespace elproj
                 form.Show();
                 this.Hide();
             }
+          else if (comboBox1.SelectedItem.ToString() == "display ")
+            {
+                Form7 form = new Form7();
+                form.Show();
+                this.Hide();
+            }
         }
     }
 }
