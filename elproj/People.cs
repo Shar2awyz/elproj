@@ -9,7 +9,7 @@ namespace elproj
 {
     internal abstract  class People
     {
-     internal string Name;
+        internal string Name;
         internal  string Department;
         internal string ID;
         protected string salarywithbonus="0";
