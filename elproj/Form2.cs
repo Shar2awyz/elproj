@@ -31,6 +31,12 @@ namespace elproj
                 checkBox1.Show();
                 CheckBox2.Show();
             }
+            else
+              if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "search" && checkBox1.Checked == true)
+            {
+                checkBox1.Show();
+                CheckBox2.Show();
+            }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -49,6 +55,8 @@ namespace elproj
 
 
             }
+        
+
 
 
 
@@ -59,6 +67,12 @@ namespace elproj
                 if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "Delete All")
             {
 
+                checkBox1.Show();
+                CheckBox2.Show();
+            }
+            else
+              if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "search")
+            {
                 checkBox1.Show();
                 CheckBox2.Show();
             }
@@ -85,6 +99,12 @@ namespace elproj
             if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "add employee" && checkBox1.Checked == true)
             {
                 Form4 fors = new Form4();
+                fors.Show();
+                this.Hide();
+            }else
+              if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "search" && checkBox1.Checked == true)
+            {
+                Form8 fors = new Form8();
                 fors.Show();
                 this.Hide();
             }
