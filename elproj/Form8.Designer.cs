@@ -73,31 +73,31 @@
             // textBox2
             // 
             textBox2.Location = new Point(366, 230);
-            textBox2.Margin = new Padding(5, 5, 5, 5);
+            textBox2.Margin = new Padding(5);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(306, 39);
             textBox2.TabIndex = 3;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(366, 467);
-            textBox3.Margin = new Padding(5, 5, 5, 5);
+            textBox3.Location = new Point(366, 301);
+            textBox3.Margin = new Padding(5);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(306, 39);
             textBox3.TabIndex = 4;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(366, 301);
-            textBox4.Margin = new Padding(5, 5, 5, 5);
+            textBox4.Location = new Point(366, 376);
+            textBox4.Margin = new Padding(5);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(306, 39);
             textBox4.TabIndex = 5;
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(366, 376);
-            textBox5.Margin = new Padding(5, 5, 5, 5);
+            textBox5.Location = new Point(366, 467);
+            textBox5.Margin = new Padding(5);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(306, 39);
             textBox5.TabIndex = 6;
