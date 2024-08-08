@@ -24,8 +24,65 @@ namespace elproj
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
+            string filePath = @"D:\AssisDr.txt";
 
+            
+            if (!File.Exists(filePath))
+            {
+                MessageBox.Show("File not found: " + filePath);
+                return;
+            }
+
+            
+            string inputId = textBox1.Text.Trim();
+
+            if (string.IsNullOrEmpty(inputId))
+            {
+                MessageBox.Show("Please enter an ID.");
+                return;
+            }
+
+            try
+            {
+                
+                string[] lines = File.ReadAllLines(filePath);
+
+                
+                for (int i = 0; i < lines.Length; i++)
+                {
+                    if (lines[i].Trim() == inputId)
+                    {
+                        
+                        string name = lines[i - 1].Trim(); 
+                        string id = lines[i].Trim();        
+                        string department = lines[i + 1].Trim(); 
+                        string bonus = lines[i + 2].Trim();
+
+
+                        textBox2.Text = $"Name: {name}\n";
+
+
+                        textBox3.Text =  $"iD: {id}\n"  ;
+                        
+                        textBox4.Text =   $" Department: {department}\n  ";
+
+                        textBox5.Text = $"bonus: {bonus}";
+                        return;
+                    }
+                }
+
+               
+                MessageBox.Show("Assistant Doctor not found.");
+            }
+            catch (Exception ex)
+            {
+                
+                MessageBox.Show($"An error occurred: {ex.Message}");
+            }
         }
+
+
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
