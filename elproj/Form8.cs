@@ -60,14 +60,14 @@ namespace elproj
                         string bonus = lines[i + 2].Trim();
 
 
-                        textBox2.Text = $"Name: {name}\n";
+                        textBox2.Text = $" {name}\n";
 
 
-                        textBox3.Text =  $"iD: {id}\n"  ;
+                        textBox3.Text =  $" {id}\n"  ;
                         
-                        textBox4.Text =   $" Department: {department}\n  ";
+                        textBox4.Text =   $"{department}\n  ";
 
-                        textBox5.Text = $"bonus: {bonus}";
+                        textBox5.Text = $"{bonus}";
                         return;
                     }
                 }

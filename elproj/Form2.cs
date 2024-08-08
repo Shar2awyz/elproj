@@ -93,7 +93,7 @@ namespace elproj
                 fors.Show();
                 this.Hide();
             }else
-              if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "search" && checkBox1.Checked == true)
+              if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "search" &&    CheckBox2.Checked == false && checkBox1.Checked == true)
             {
                 Form8 fors = new Form8();
                 fors.Show();
@@ -187,8 +187,16 @@ namespace elproj
 
 
             }
+            
+                else
+              if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "search" && checkBox1.Checked == false&&CheckBox2.Checked==true)
+            {
+                Form10 fors = new Form10();
+                fors.Show();
+                this.Hide();
+            }
             else
-                MessageBox.Show("اصبر لسه");
+            MessageBox.Show("اصبر لسه");
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
