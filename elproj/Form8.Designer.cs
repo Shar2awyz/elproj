@@ -43,105 +43,108 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(321, 258);
+            textBox1.Location = new Point(225, 50);
+            textBox1.Margin = new Padding(2, 2, 2, 2);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(214, 39);
+            textBox1.Size = new Size(190, 27);
             textBox1.TabIndex = 0;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
             // button1
             // 
-            button1.Location = new Point(321, 335);
+            button1.Location = new Point(225, 93);
+            button1.Margin = new Padding(2, 2, 2, 2);
             button1.Name = "button1";
-            button1.Size = new Size(214, 46);
+            button1.Size = new Size(190, 36);
             button1.TabIndex = 1;
-            button1.Text = "Show Details";
+            button1.Text = "search";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(348, 200);
+            label1.Location = new Point(126, 50);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(146, 32);
+            label1.Size = new Size(90, 20);
             label1.TabIndex = 2;
             label1.Text = "Enter The ID";
             label1.Click += label1_Click;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(844, 34);
-            textBox2.Margin = new Padding(5, 5, 5, 5);
+            textBox2.Location = new Point(225, 144);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(220, 39);
+            textBox2.Size = new Size(190, 27);
             textBox2.TabIndex = 3;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(844, 142);
-            textBox3.Margin = new Padding(5, 5, 5, 5);
+            textBox3.Location = new Point(225, 292);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(220, 39);
+            textBox3.Size = new Size(190, 27);
             textBox3.TabIndex = 4;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(844, 267);
-            textBox4.Margin = new Padding(5, 5, 5, 5);
+            textBox4.Location = new Point(225, 188);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(220, 39);
+            textBox4.Size = new Size(190, 27);
             textBox4.TabIndex = 5;
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(844, 376);
-            textBox5.Margin = new Padding(5, 5, 5, 5);
+            textBox5.Location = new Point(225, 235);
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(220, 39);
+            textBox5.Size = new Size(190, 27);
             textBox5.TabIndex = 6;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(711, 34);
+            label2.Location = new Point(153, 144);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(83, 32);
+            label2.Size = new Size(52, 20);
             label2.TabIndex = 7;
             label2.Text = "Name:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(726, 149);
+            label3.Location = new Point(153, 188);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(42, 32);
+            label3.Size = new Size(27, 20);
             label3.TabIndex = 8;
             label3.Text = "ID:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(682, 274);
+            label4.Location = new Point(127, 235);
+            label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(142, 32);
+            label4.Size = new Size(89, 20);
             label4.TabIndex = 9;
             label4.Text = "Department";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(711, 376);
+            label5.Location = new Point(143, 292);
+            label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(77, 32);
+            label5.Size = new Size(49, 20);
             label5.TabIndex = 10;
             label5.Text = "Salary";
             // 
             // Form8
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1110, 570);
+            ClientSize = new Size(683, 356);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -153,6 +156,7 @@
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(textBox1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Form8";
             Text = "Form8";
             Load += Form8_Load;
