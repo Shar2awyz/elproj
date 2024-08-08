@@ -35,36 +35,37 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(261, 271);
+            textBox1.Location = new Point(305, 256);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(200, 39);
+            textBox1.Size = new Size(214, 39);
             textBox1.TabIndex = 0;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
             // button1
             // 
-            button1.Location = new Point(286, 332);
+            button1.Location = new Point(305, 336);
             button1.Name = "button1";
-            button1.Size = new Size(150, 46);
+            button1.Size = new Size(214, 46);
             button1.TabIndex = 1;
-            button1.Text = "button1";
+            button1.Text = "Show Details";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(319, 221);
+            label1.Location = new Point(341, 195);
             label1.Name = "label1";
-            label1.Size = new Size(78, 32);
+            label1.Size = new Size(146, 32);
             label1.TabIndex = 2;
-            label1.Text = "label1";
+            label1.Text = "Enter The ID";
+            label1.Click += label1_Click;
             // 
             // Form8
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(846, 487);
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(textBox1);
