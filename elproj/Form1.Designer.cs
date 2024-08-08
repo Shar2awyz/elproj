@@ -133,12 +133,12 @@
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(727, 477);
+            linkLabel1.Location = new Point(707, 477);
             linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(121, 32);
+            linkLabel1.Size = new Size(141, 32);
             linkLabel1.TabIndex = 10;
             linkLabel1.TabStop = true;
-            linkLabel1.Text = "linkLabel1";
+            linkLabel1.Text = "Rate Project";
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // Form1
