@@ -42,7 +42,7 @@ namespace elproj
                         string department = lines[i + 1].Trim();
                         string bonus = lines[i + 2].Trim();
 
-                       
+
                         textBox2.Text = name;
                         textBox3.Text = id;
                         textBox4.Text = department;
@@ -61,7 +61,14 @@ namespace elproj
 
         private void Form10_Load(object sender, EventArgs e)
         {
-           
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();   
+                form.Show();
+            this.Hide();
         }
     }
 }

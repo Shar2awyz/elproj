@@ -24,17 +24,17 @@ namespace elproj
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+
             string filePath = @"D:\AssisDr.txt";
 
-            
+
             if (!File.Exists(filePath))
             {
                 MessageBox.Show("File not found: " + filePath);
                 return;
             }
 
-            
+
             string inputId = textBox1.Text.Trim();
 
             if (string.IsNullOrEmpty(inputId))
@@ -45,39 +45,39 @@ namespace elproj
 
             try
             {
-                
+
                 string[] lines = File.ReadAllLines(filePath);
 
-                
+
                 for (int i = 0; i < lines.Length; i++)
                 {
                     if (lines[i].Trim() == inputId)
                     {
-                        
-                        string name = lines[i - 1].Trim(); 
-                        string id = lines[i].Trim();        
-                        string department = lines[i + 1].Trim(); 
+
+                        string name = lines[i - 1].Trim();
+                        string id = lines[i].Trim();
+                        string department = lines[i + 1].Trim();
                         string bonus = lines[i + 2].Trim();
 
 
                         textBox2.Text = $" {name}\n";
 
 
-                        textBox3.Text =  $" {id}\n"  ;
-                        
-                        textBox4.Text =   $"{department}\n  ";
+                        textBox3.Text = $" {id}\n";
+
+                        textBox4.Text = $"{department}\n  ";
 
                         textBox5.Text = $"{bonus}";
                         return;
                     }
                 }
 
-               
+
                 MessageBox.Show("Assistant Doctor not found.");
             }
             catch (Exception ex)
             {
-                
+
                 MessageBox.Show($"An error occurred: {ex.Message}");
             }
         }
@@ -97,6 +97,13 @@ namespace elproj
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();
+            form.Show();
+            this.Hide();    
         }
     }
 }
