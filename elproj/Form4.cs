@@ -44,39 +44,85 @@ namespace elproj
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                using (StreamWriter st = new StreamWriter("D:\\AssisDr.txt", true))
+           if(checkBox1.Checked&&checkBox2.Checked==false) {
+                try
                 {
-                  
-                    AssisDr employees = new AssisDr();
-                    employees.Name=textBox1.Text;
-                    employees.ID = textBox2.Text;
-                    employees.Department=textBox3.Text;
-                    employees.setBonus(textBox4.Text);
-                    st.WriteLine(employees.Name);
-                    st.WriteLine(employees.ID);
-                    st.WriteLine(employees.Department);
-                    st.WriteLine(employees.getBonus());
-        
-                }
-                MessageBox.Show("Submitted Successfully");
+                    using (StreamWriter st = new StreamWriter("D:\\AssisDr.txt", true))
+                    {
 
-                textBox1.Text = "";
-                textBox2.Text = "";
-                textBox3.Text = "";
-                textBox4.Text = "";
+                        AssisDr employees = new AssisDr();
+                        employees.Name = textBox1.Text;
+                        employees.ID = textBox2.Text;
+                        employees.Department = textBox3.Text;
+                        employees.setBonus(textBox4.Text);
+                        st.WriteLine(employees.Name);
+                        st.WriteLine(employees.ID);
+                        st.WriteLine(employees.Department);
+                        st.WriteLine(employees.getBonus());
+
+                    }
+                    MessageBox.Show("Submitted Successfully");
+
+                    textBox1.Text = "";
+                    textBox2.Text = "";
+                    textBox3.Text = "";
+                    textBox4.Text = "";
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred: {ex.Message}");
+                }
             }
-            catch (Exception ex)
+           else
+                  if (checkBox2.Checked && checkBox1.Checked == false)
             {
-                MessageBox.Show($"An error occurred: {ex.Message}");
+                try
+                {
+                    using (StreamWriter st = new StreamWriter("D:\\Recep.txt", true))
+                    {
+
+                        Receptionist employees = new Receptionist();
+                        employees.Name = textBox1.Text;
+                        employees.ID = textBox2.Text;
+                        employees.Department = textBox3.Text;
+                        employees.setBonus(textBox4.Text);
+                        st.WriteLine(employees.Name);
+                        st.WriteLine(employees.ID);
+                        st.WriteLine(employees.Department);
+                        st.WriteLine(employees.getBonus());
+
+                    }
+                    MessageBox.Show("Submitted Successfully");
+
+                    textBox1.Text = "";
+                    textBox2.Text = "";
+                    textBox3.Text = "";
+                    textBox4.Text = "";
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred: {ex.Message}");
+                }
             }
         }
-            private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            Form2 form = new Form2();   
+            Form2 form = new Form2();
             form.Show();
             this.Hide();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox1.Checked==true)
+                checkBox2.Checked = false;
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked == true)
+                checkBox1.Checked = false;
+
         }
     }
 }

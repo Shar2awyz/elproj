@@ -39,6 +39,8 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
+            checkBox1 = new CheckBox();
+            checkBox2 = new CheckBox();
             SuspendLayout();
             // 
             // textBox1
@@ -139,6 +141,28 @@
             label4.TabIndex = 9;
             label4.Text = "Bonus";
             // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(45, 366);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(171, 33);
+            checkBox1.TabIndex = 10;
+            checkBox1.Text = "Assistant Dr";
+            checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
+            // 
+            // checkBox2
+            // 
+            checkBox2.AutoSize = true;
+            checkBox2.Location = new Point(45, 405);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(179, 33);
+            checkBox2.TabIndex = 11;
+            checkBox2.Text = "Receptionist";
+            checkBox2.UseVisualStyleBackColor = true;
+            checkBox2.CheckedChanged += checkBox2_CheckedChanged;
+            // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(14F, 29F);
@@ -149,6 +173,8 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1189, 599);
+            Controls.Add(checkBox2);
+            Controls.Add(checkBox1);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -182,5 +208,7 @@
         private Label label2;
         private Label label3;
         private Label label4;
+        private CheckBox checkBox1;
+        private CheckBox checkBox2;
     }
 }

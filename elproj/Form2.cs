@@ -20,11 +20,7 @@ namespace elproj
             CheckBox2.Hide();
        
 
-                if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "add employee")
-            {
-                checkBox1.Show();
-                CheckBox2.Show();
-            }
+          
             if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "Delete All")
             {
 
@@ -41,12 +37,7 @@ namespace elproj
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "add employee")
-            {
-                checkBox1.Show();
-                CheckBox2.Show();
-            }
-            else
+            
      if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "display") {
                 checkBox1.Show();
                 CheckBox2.Show();
@@ -96,7 +87,7 @@ namespace elproj
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "add employee" && checkBox1.Checked == true)
+            if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "add employee")
             {
                 Form4 fors = new Form4();
                 fors.Show();
@@ -168,10 +159,25 @@ namespace elproj
                 }
             }
             else
-            if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "display"&&checkBox1.Checked==true&CheckBox2.Checked==false)
+            if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "display"&&checkBox1.Checked==true&&CheckBox2.Checked==false)
             {
                 Form6 fors = new Form6();
                 fors.Show();
+                this.Hide();
+
+
+
+
+
+
+
+            }
+            else
+            if (comboBox1.SelectedItem != null && comboBox1.SelectedItem.ToString() == "display" && CheckBox2.Checked == true && checkBox1.Checked == false)
+            {
+         
+                Form9 forq = new Form9();
+                forq.Show();
                 this.Hide();
 
 
