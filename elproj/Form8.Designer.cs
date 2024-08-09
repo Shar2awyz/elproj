@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form8));
             textBox1 = new TextBox();
             button1 = new Button();
             label1 = new Label();
@@ -52,11 +53,12 @@
             // 
             // button1
             // 
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.BackgroundImageLayout = ImageLayout.Stretch;
             button1.Location = new Point(366, 149);
             button1.Name = "button1";
             button1.Size = new Size(309, 58);
             button1.TabIndex = 1;
-            button1.Text = "search";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -105,6 +107,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.Gray;
             label2.Location = new Point(249, 230);
             label2.Name = "label2";
             label2.Size = new Size(83, 32);
@@ -114,6 +117,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.Gray;
             label3.Location = new Point(249, 301);
             label3.Name = "label3";
             label3.Size = new Size(42, 32);
@@ -123,6 +127,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.Gray;
             label4.Location = new Point(206, 376);
             label4.Name = "label4";
             label4.Size = new Size(142, 32);
@@ -132,6 +137,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.Gray;
             label5.Location = new Point(232, 467);
             label5.Name = "label5";
             label5.Size = new Size(77, 32);
@@ -140,18 +146,23 @@
             // 
             // button2
             // 
+            button2.BackColor = SystemColors.ActiveCaptionText;
+            button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
+            button2.BackgroundImageLayout = ImageLayout.Stretch;
             button2.Location = new Point(880, 489);
             button2.Name = "button2";
             button2.Size = new Size(150, 46);
             button2.TabIndex = 11;
-            button2.Text = "Back";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // Form8
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveBorder;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1110, 570);
             Controls.Add(button2);
             Controls.Add(label5);
@@ -165,6 +176,7 @@
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(textBox1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form8";
             Text = "Form8";
             Load += Form8_Load;

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form11));
             button1 = new Button();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
@@ -42,7 +43,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(279, 154);
+            button1.Location = new Point(414, 175);
             button1.Name = "button1";
             button1.Size = new Size(150, 46);
             button1.TabIndex = 0;
@@ -52,7 +53,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(258, 86);
+            textBox1.Location = new Point(391, 96);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(200, 39);
             textBox1.TabIndex = 1;
@@ -60,7 +61,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(258, 227);
+            textBox2.Location = new Point(391, 234);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(200, 39);
             textBox2.TabIndex = 2;
@@ -68,7 +69,7 @@
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(258, 288);
+            textBox3.Location = new Point(391, 313);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(200, 39);
             textBox3.TabIndex = 3;
@@ -76,7 +77,7 @@
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(258, 358);
+            textBox4.Location = new Point(391, 374);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(200, 39);
             textBox4.TabIndex = 4;
@@ -85,7 +86,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(283, 42);
+            label1.Location = new Point(414, 24);
             label1.Name = "label1";
             label1.Size = new Size(146, 32);
             label1.TabIndex = 5;
@@ -94,7 +95,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(97, 234);
+            label2.Location = new Point(245, 234);
             label2.Name = "label2";
             label2.Size = new Size(83, 32);
             label2.TabIndex = 6;
@@ -103,7 +104,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(115, 295);
+            label3.Location = new Point(263, 313);
             label3.Name = "label3";
             label3.Size = new Size(49, 32);
             label3.TabIndex = 7;
@@ -112,7 +113,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(81, 365);
+            label4.Location = new Point(224, 374);
             label4.Name = "label4";
             label4.Size = new Size(131, 32);
             label4.TabIndex = 8;
@@ -120,19 +121,23 @@
             // 
             // button2
             // 
-            button2.Location = new Point(624, 380);
+            button2.BackColor = SystemColors.ActiveCaptionText;
+            button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
+            button2.BackgroundImageLayout = ImageLayout.Stretch;
+            button2.Location = new Point(810, 518);
             button2.Name = "button2";
-            button2.Size = new Size(150, 46);
+            button2.Size = new Size(206, 81);
             button2.TabIndex = 9;
-            button2.Text = "Back";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // Form11
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1045, 611);
             Controls.Add(button2);
             Controls.Add(label4);
             Controls.Add(label3);

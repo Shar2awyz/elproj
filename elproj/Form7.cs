@@ -132,5 +132,10 @@ namespace elproj
             form.Show();
             this.Hide();
         }
+
+        private void Form7_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

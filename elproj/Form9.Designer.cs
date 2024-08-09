@@ -47,11 +47,12 @@
             // 
             // button1
             // 
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.BackgroundImageLayout = ImageLayout.Stretch;
             button1.Location = new Point(686, 624);
             button1.Name = "button1";
             button1.Size = new Size(200, 46);
             button1.TabIndex = 0;
-            button1.Text = "Display Info!";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -253,21 +254,24 @@
             // 
             // button2
             // 
+            button2.BackColor = SystemColors.ActiveCaptionText;
+            button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
+            button2.BackgroundImageLayout = ImageLayout.Stretch;
             button2.Location = new Point(936, 624);
             button2.Name = "button2";
             button2.Size = new Size(150, 46);
             button2.TabIndex = 29;
-            button2.Text = "Back";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // button3
             // 
+            button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
+            button3.BackgroundImageLayout = ImageLayout.Stretch;
             button3.Location = new Point(22, 624);
             button3.Name = "button3";
             button3.Size = new Size(150, 46);
             button3.TabIndex = 30;
-            button3.Text = "Exit";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click_1;
             // 

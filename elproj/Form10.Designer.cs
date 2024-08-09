@@ -15,6 +15,7 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form10));
             textBox1 = new TextBox();
             label1 = new Label();
             buttonSearch = new Button();
@@ -70,6 +71,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.Gray;
             label2.Location = new Point(217, 278);
             label2.Margin = new Padding(6, 0, 6, 0);
             label2.Name = "label2";
@@ -89,7 +91,8 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(217, 352);
+            label3.BackColor = SystemColors.ActiveBorder;
+            label3.Location = new Point(232, 352);
             label3.Margin = new Padding(6, 0, 6, 0);
             label3.Name = "label3";
             label3.Size = new Size(42, 32);
@@ -108,7 +111,8 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(217, 426);
+            label4.BackColor = Color.Gray;
+            label4.Location = new Point(174, 421);
             label4.Margin = new Padding(6, 0, 6, 0);
             label4.Name = "label4";
             label4.Size = new Size(147, 32);
@@ -127,6 +131,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.Gray;
             label5.Location = new Point(217, 500);
             label5.Margin = new Padding(6, 0, 6, 0);
             label5.Name = "label5";
@@ -136,18 +141,21 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.Black;
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.BackgroundImageLayout = ImageLayout.Stretch;
             button1.Location = new Point(745, 554);
             button1.Name = "button1";
             button1.Size = new Size(150, 46);
             button1.TabIndex = 11;
-            button1.Text = "Back";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // Form10
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(940, 642);
             Controls.Add(button1);
             Controls.Add(label5);
