@@ -31,19 +31,19 @@ namespace elproj
 
         private void button1_Click(object sender, EventArgs e)
         {
-          if(  comboBox1.SelectedItem.ToString() == "Add patient ")
+            if (comboBox1.SelectedItem.ToString() == "Add patient ")
             {
                 Form5 form = new Form5();
                 form.Show();
                 this.Hide();
             }
-          else if (comboBox1.SelectedItem.ToString() == "display ")
+            else if (comboBox1.SelectedItem.ToString() == "display ")
             {
                 Form7 form = new Form7();
                 form.Show();
                 this.Hide();
             }
-          else if (comboBox1.SelectedItem.ToString()== "Delete All")
+            else if (comboBox1.SelectedItem.ToString() == "Delete All")
             {
 
                 try
@@ -61,6 +61,13 @@ namespace elproj
 
                 }
 
+            }
+            else
+                  if ((comboBox1.SelectedItem.ToString() == "Search patient ")) {
+            Form11 form = new Form11(); 
+                form.Show();
+                this.Hide();
+            
             }
         }
     }
