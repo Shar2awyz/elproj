@@ -38,7 +38,7 @@
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Add patient ", "Search patient ", "display ", "Delete All" });
-            comboBox1.Location = new Point(257, 144);
+            comboBox1.Location = new Point(249, 143);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(134, 23);
             comboBox1.TabIndex = 0;
@@ -46,21 +46,23 @@
             // 
             // button1
             // 
-            button1.Location = new Point(279, 196);
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.BackgroundImageLayout = ImageLayout.Stretch;
+            button1.Location = new Point(271, 183);
             button1.Name = "button1";
-            button1.Size = new Size(83, 22);
+            button1.Size = new Size(83, 39);
             button1.TabIndex = 1;
-            button1.Text = "submit";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(473, 267);
+            button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
+            button2.BackgroundImageLayout = ImageLayout.Stretch;
+            button2.Location = new Point(473, 262);
             button2.Name = "button2";
-            button2.Size = new Size(83, 22);
+            button2.Size = new Size(83, 36);
             button2.TabIndex = 2;
-            button2.Text = "Main Menu";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
